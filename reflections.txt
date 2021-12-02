@@ -1,0 +1,17 @@
+### AoC 2021 Postmortems
+
+# Day One
+
+- Remember to save input as text file
+- Initializing an `Int` from a string returns optional
+- The `lines` library function would have worked well modulo the above
+- Actual text editing in BBEdit much more awkward than using vim
+  * AI: review Cocoa text editing keybindings
+- Got all the comparators wrong the first time, but that's normal
+
+Video:
+- Uploading screen recording is *slow*, so kick it off that night
+- "Natural" text sizes on my 27" QHD display are unreadable on YouTube
+  * AI: Use comically large fonts for "interesting" windows
+- Voice is nasal and whiny
+
