@@ -15,3 +15,74 @@ Video:
   * AI: Use comically large fonts for "interesting" windows
 - Voice is nasal and whiny
 
+# Day Two
+
+- Marshal input in one place
+- Really hard to move quickly *and* make a video
+  - Nerves when doing things publicly are a thing
+  - Talking while coding is a balance...or a skill
+- Keep the camera window visible
+
+# Day Three
+
+- We've already reached the point where a minute's thought may be better than a minute's typing
+- `[Int](repeating: 0, count: 12)` was the better way to build the array
+- Worth knowing `[Int:Int](uniqueKeysWithValues: (0..<12).map { ($0, 0) })` as well
+- Get the code working *before* cut-and-paste reuse
+- Would a function with a "reverse" parameter really have been better than cut-and-paste reuse
+  - Main upside would be documenting clear(er) semantics
+- Think through boundary conditions when reading problem
+
+- Half-hour video is 10 gigs: 13 hours(!) to upload to YouTube
+  * AI: encode locally at...720p?...before uploading
+  * AI: Store originals on external media that isn't iCloud synced
+
+
+# Day Four
+
+- I find the default for `String.split` `omittingEmptySubsequences` unintuitive.
+- an any-whitespace-based `split` would be useful
+- could have parsed bingo card numbers by *position*, not by splitting
+- Parsing the input took 20 minutes!
+- There was a bug; how was our debugging strategy?
+  - Not terrible! Immediately had a handful of theories. Ruled them out.
+  - But delayed revisiting the correct theory because it seemed hard to test!
+  - We *were* logging the data we needed to spot the bug: the column number was always zero!
+    - Should have spotted this at 41' (at least)
+  - At 36' you can see me taking a minute thinking "it's been a stressful day. maybe give up and try it in the morning"
+  - A lot of debugging is just dealing with your own frustration
+- This is why we do this! Debugging novel code is good experience.
+- In spite of the bug, I genuinely enjoyed this puzzle.
+- My approach was to check every board after every number
+  - O(numbers called * number of boards * (rows * rowsize + cols * colsize))
+  - What if there had been LOTS of numbers called and/or LOTS of boards
+    - Dict from number called to the rows/cols it's in
+      - and a pointer from that row/col to the boards it's in
+      - class Board { [[Int]] }
+      - [Int:([Int], Board)]
+      - or store, not the board, but a scoring function: (Set<Int>)->Int
+  - What if the board sizes were enormous?
+    - hard to imagine, but [Int:(Set<Int>, Board)]
+    - *much* slower for 5x5 boards
+
+- 480p is too low quality; it leaves text very fuzzy
+
+# Day Five
+
+- Tuples are still not first class in Swift (not hashable, among other things)
+- parsing only took five minutes this time
+- `Set.insert` returns `(inserted: Bool, memberAfterInsert: Element)`
+- Really should pair "start" with "finish" and "begin" with "end"
+- After a couple of wrong attempts, think before submitting answers
+- "If you have (1, 1) and (3, 3), you subtract them and get 2, so (the `i`s) are 0, 1, and 2"
+  - But that's exactly what's wrong: you *don't* get 2.
+- The visualization didn't help...but I still like it as a sanity check
+- Could have used line and char numbers (which BBEdit displays) to check against input data
+- Could have pulled out diagonal code and checked that it explored the right points for a test input
+  - This is closer to how you'd unit test "real" code
+- Debugging "strategy" was worse than Day Four
+- Took *forever* to even bother hand-simulating the broken five lines of code
+
+- 720p is *just* high enough quality. But probably should upload 1080p.
+
+- AoC does wear me down. Particularly bad days.
