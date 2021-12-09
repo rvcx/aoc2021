@@ -86,3 +86,28 @@ Video:
 - 720p is *just* high enough quality. But probably should upload 1080p.
 
 - AoC does wear me down. Particularly bad days.
+
+# Day Six
+
+- A lot of dithering over running the Part 1 code for Part 2...when I knew it wouldn't work
+- Remember that dictionary lookups return optionals
+- Used loops instead of one-liners in several places...
+  - ...and that's probably okay if the one-liners aren't in your fingers.
+  - ...but kinda embarrassing.
+- Poor job explaining the strategy
+
+# Day Seven
+
+- I still don't know if Swift has an "average" function...but `reduce` is a rudiment
+  - compute a total with `.reduce(0, +)`
+- The actual position is the *median* for the first part, and the mean for pt 2
+  - My analytical proof of this is surely over-complex...and not worth doing
+  - Getting comfortable with using computers instead of analyzing was a thing for me
+    - props to 538's "Riddler" puzzles (which I did every week for a while)
+- `min` and `max` (among many others) are *member* functions in Swift
+  - I'm still gaining intuition about how extensions change API design
+- sixteen minus five is eleven, not nine
+- the average of the numbers from 1 to 100 is 50.5, not 50
+- check personal stats
+- one-liner versions
+
