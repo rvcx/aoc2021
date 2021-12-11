@@ -111,3 +111,28 @@ Video:
 - check personal stats
 - one-liner versions
 
+# Day Eight
+
+- READ. THE. PROBLEM.
+- But the problem I solved was also fun!
+
+- Apple's screen recorder is not bullet proof.
+  - Was it because the recording was over an hour?
+* AI: Switch to OBS
+  - Try live-streaming
+  
+# Day Nine
+
+- I'm much more easily flustered by *trivial* code...
+- Is there an "elegant" code structure for neighbor coordinates?
+- We didn't realize that we were doing `Character` comparison instead of `Int` comparison...but they're equivalent for single digits
+- Marshal input early!
+- `while let cur = q.pop()` is a beautiful code structure
+- Forgot to insert the low point into the basin on the first pass
+- `if s.insert(e).inserted { ... }` is the idiom...
+  - ...but beware short circuits!
+    - `if someCondition && s.insert(e).inserted { ... }`
+- Why did I make `Queue` a class? Because I didn't implement deep copy!
+
+
+
