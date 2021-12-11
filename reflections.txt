@@ -134,5 +134,24 @@ Video:
     - `if someCondition && s.insert(e).inserted { ... }`
 - Why did I make `Queue` a class? Because I didn't implement deep copy!
 
+# Day Ten
 
+- Never got to talking about `Queue` class vs struct
+- Think through your code structure before typing to be fast
+- "explore to figure out what bits of logic you need, then plumb together" pretty consistently produces ugly code. But it's a way to find the crux!
+- There *are* (fairly) elegant code structures for parsing
+  - You need to do a few of them for them to feel natural
+- Could have used the `closes` dictionary to identify open delimiters
+- "Remember to increment pos" is a thing from experience
+- Recursive (and all nontrivial parsing) on untrusted input
+  - JSON and YAML are awesome
+- READ THE PROBLEM. (Even part 2.)
+- `if let a = b && XXX` can't use `a` in `XXX`
+  - `if let a = b, XXX` can.
+- lldb and DYLD_LIBRARY_PATH environment variable
+  - `process launch -v DYLD_LIBRARY_PATH=foo`
+
+- New recording setup seems to work
+  - Ending live stream kills buffer (cuts off last 20 seconds)
+- How do I replace low-quality live stream with high-quality recording?
 
