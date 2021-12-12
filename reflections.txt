@@ -155,3 +155,15 @@ Video:
   - Ending live stream kills buffer (cuts off last 20 seconds)
 - How do I replace low-quality live stream with high-quality recording?
 
+
+# Day Eleven
+
+- Again, most of the time wasted writing a trivial `neighbors` function
+- Maybe grids of numbers are a thing this year? So, add library utilities.
+- Of course once everything is synced it will repeat every ten steps
+- And of course everything will synchronize in only a few hundred steps
+
+- live stream didn't work
+  - the OBS interface is open-source quality
+
+
