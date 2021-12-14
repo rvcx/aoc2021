@@ -167,3 +167,20 @@ Video:
   - the OBS interface is open-source quality
 
 
+# Day Twelve
+
+- Again, all the (minor) issues were not paying sufficient attention to problem description
+  - graph structure is bidirectional
+  - use of 'start' (in both parts)
+- never actually used `rooms`
+- What's the difference between `x[y] ?? z` and `x[y, default: z]`?
+
+# Day Thirteen
+
+- The parsing. Oh gods the parsing.
+  - Everybody gets flustered. And, again, it's often on *easy* stuff.
+  - Don't be afraid to preprocess by hand! This code will be run *once*!!!
+  - No subscript by integer range (even in my library); called `slice`
+  - "Record"-based parsing requires `omitEmptySubsequences: false`
+- Just a generally bad day for the brain grokking code structure
+  - working from the "hard" logic *out* seemed to get me going
