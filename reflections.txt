@@ -181,6 +181,21 @@ Video:
   - Everybody gets flustered. And, again, it's often on *easy* stuff.
   - Don't be afraid to preprocess by hand! This code will be run *once*!!!
   - No subscript by integer range (even in my library); called `slice`
-  - "Record"-based parsing requires `omitEmptySubsequences: false`
+  - "Record"-based parsing requires `omittingEmptySubsequences: false`
 - Just a generally bad day for the brain grokking code structure
   - working from the "hard" logic *out* seemed to get me going
+
+# Day Fourteen
+
+- Making the input homogenous by hand was a huge win
+- I *had* the print statement to debug my `pair` computation...but didn't run it
+- The (/any) algorith for part 2 was not immediately obvious
+  - spend 3 1/2 minutes scanning for patterns, which went nowhere
+  - 2 additional mins to find the core of the strategy that did work
+- "I can't think with something rattling nearby" is *very* programmer-y
+- Writing nontrivial logic is fun!
+- lldb hangs backtracing blown stacks!
+  - but I did immediately guess that was the problem...because debuggers, man
+- Still haven't look at others' solutions
+- I really enjoyed this problem. (It shows.)
+
