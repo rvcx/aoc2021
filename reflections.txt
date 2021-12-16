@@ -189,7 +189,7 @@ Video:
 
 - Making the input homogenous by hand was a huge win
 - I *had* the print statement to debug my `pair` computation...but didn't run it
-- The (/any) algorith for part 2 was not immediately obvious
+- The (/any) algorithm for part 2 was not immediately obvious
   - spend 3 1/2 minutes scanning for patterns, which went nowhere
   - 2 additional mins to find the core of the strategy that did work
 - "I can't think with something rattling nearby" is *very* programmer-y
@@ -199,3 +199,23 @@ Video:
 - Still haven't look at others' solutions
 - I really enjoyed this problem. (It shows.)
 
+# Day Fifteen
+
+- Knowing *a* solution can be a huge hindrance in finding nearby solutions
+- Reflect on "powerful" algorithm you're going to implement before implementing
+  - I *knew* these things needed priority queues. And pqueues are hard to write!
+  - I do implement a lot of things from wikipedia (or CLRS)...but doing it "on the clock" I wasn't *thinking*
+  - Mistakes are more common when you're not engaged. I hated my approach.
+  - Also true for debugging: a lot of debugging is finding excuses not to think
+- A better way to "brute force" would have been to write something with a FibHeap API but worse complexities on each operation
+  - Lots of interesting ways to make that "good enough!"
+  - Array from weights/path length to nodes (size 500)
+    - Hybrid with min/max occupied would probably have scaled well: the "active fringe" has very similar values! Range of ten!
+- Huge mental block around "Fibonacci Heaps should not be necessary!!!"
+- One implementation wasn't "slow"; it was hung. It would have finished modulo the bug.
+
+- Second attempt adds nodes to make every edge weight 1
+- Only ten minutes! (And that's while explaining.)
+- Making the larger grid "virtual" was quick, but ten minutes debugging fiddly details
+
+- The simple approach was *MUCH* faster, in every way!
