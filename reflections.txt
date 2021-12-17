@@ -219,3 +219,12 @@ Video:
 - Making the larger grid "virtual" was quick, but ten minutes debugging fiddly details
 
 - The simple approach was *MUCH* faster, in every way!
+
+# Day Sixteen
+
+- *Much* better global ranking than prior days (?)
+- Slow off the mark saving input
+- Not a very systematic approach to reading the problem
+- We got answer to part 1—and debug statements showing that is was right—but didn't read them!
+- See how much faster I go when I don't talk?
+
