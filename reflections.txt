@@ -225,6 +225,7 @@ Video:
 - *Much* better global ranking than prior days (?)
 - Slow off the mark saving input
 - Not a very systematic approach to reading the problem
+- Functions taking strings as parameters should be generic on a StringProtocol
 - We got answer to part 1—and debug statements showing that is was right—but didn't read them!
 - See how much faster I go when I don't talk?
 
