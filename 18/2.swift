@@ -94,7 +94,6 @@ class Num: CustomStringConvertible {
   func doReduce() {
     var b = false
     repeat {
-      print(self)
       b = doExplosions(0) != nil || doSplits()
     } while b
   }
