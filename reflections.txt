@@ -229,3 +229,29 @@ Video:
 - We got answer to part 1—and debug statements showing that is was right—but didn't read them!
 - See how much faster I go when I don't talk?
 
+# Day Seventeen
+
+- Brute force is often better than clever or analytical
+- Easiest optimization would have been to do fewer steps
+
+# Day Eighteen
+
+- Swift won't automatically infer the `[Any]` type, but *will* infer `[[Any]]`
+- BBEdit column mode is enabled by option-dragging
+- Screwing up the first stab is fine.
+- When all else fails, start with a part of the problem you can grok, and do it.
+  - But is this good advice in real life??? Not all problems are soluble.
+- Got nothing—literally *nothing*—for ten minutes.
+- The many ways to represent (recursive) "discriminated unions"...
+  - objects containing optionals is...the least fancy. And totally works!
+    - Does permit invalid states. Sometimes making them impossible is way more complicated!
+  - Swift (recursive) enumerations with associated types
+    - No way to mutate associated values, but can reassign `self`
+    - marginally faster unoptimized; ten percent slower optimized
+  - Using a class hierarchy
+    - no "pure virtual" in Swift (to my knowledge)
+      - the Mac arrow keys
+    - can't change type in place, so need returns to pass replacements
+    - much simpler function bodies
+    - parsing now a factory, not an initializer.
+      - But maybe Swift has a feature for this I don't know?
