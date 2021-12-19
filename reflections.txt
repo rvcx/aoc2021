@@ -255,3 +255,10 @@ Video:
     - much simpler function bodies
     - parsing now a factory, not an initializer.
       - But maybe Swift has a feature for this I don't know?
+
+# Day Nineteen
+- Had a lot of trouble understanding the problem
+  - Understanding specs that are only clear once already understood is a big part of the job!
+  - Writing clear specs is astonishingly difficult
+- Writing the rotation function is the hardest part!
+  - And I *STILL* got it wrong!
