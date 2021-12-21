@@ -257,8 +257,24 @@ Video:
       - But maybe Swift has a feature for this I don't know?
 
 # Day Nineteen
+
 - Had a lot of trouble understanding the problem
   - Understanding specs that are only clear once already understood is a big part of the job!
   - Writing clear specs is astonishingly difficult
 - Writing the rotation function is the hardest part!
   - And I *STILL* got it wrong!
+
+# Day Twenty
+
+- Basic logic was ten minutes
+- The "hack" with adding margins was (probably) more complex than a real implementation of virtual margins
+- Tired brains choose dumb slogs over reflection
+- I immediately spotted that something weird was going on at the edges, but didn't follow the instinct
+- Bad debugging makes for bad video
+- Took almost 40 minutes to find the first half of the crux, and almost 50 mins for the second half: the infinite grid inverts every cycle
+  - This directly contradicts the framing of the problem. Bleh.
+  - All solved within 10 mins of that. Sigh.
+- There is an explicit "I've been mentally lazy. I guess I need to think." moment
+- A smarter approach (for part 1, at least) may have been to create *all* margin up front...with extra margin for "bleed", then ignore this bleed
+- You only need a border of 1
+- Running optimized, ~3 mins for 50 iterations (even with border of 2)
