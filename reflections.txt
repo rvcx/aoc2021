@@ -278,3 +278,20 @@ Video:
 - A smarter approach (for part 1, at least) may have been to create *all* margin up front...with extra margin for "bleed", then ignore this bleed
 - You only need a border of 1
 - Running optimized, ~3 mins for 50 iterations (even with border of 2)
+
+# Day 21
+
+- Hard to make the leaderboard if you put bugs in code
+- Three types of problems:
+  1. Just follow directions and build it out
+  2. An algorithmic insight is necessary
+  3. There's a trick in the problem description itself (rare in AoC; no fun)
+
+# Day 22
+
+- I thought I explained my thinking on Part 1 a lot better! You're welcome!
+- I have difficulty imagining anyone watching an hour of flailing over Part 2. I'm sorry!
+- Two approaches to optimization:
+  - Make deep use of knowledge of the structure of the problem
+  - Ignore the structure of the problem and focus on the *implementation*
+
