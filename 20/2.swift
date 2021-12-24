@@ -24,9 +24,9 @@ print(grid.count, grid[0].count)
 
 for t in 0..<50 {
   var newGrid = [String]()
-  for y in -4..<(grid.count + 4) {
+  for y in -2..<(grid.count + 2) {
     var newLine = ""
-    for x in -4..<(grid[0].count + 4) {
+    for x in -2..<(grid[0].count + 2) {
       var num = 0
       for ny in (y-1)...(y+1) {
         for nx in (x-1)...(x+1) {
@@ -63,6 +63,15 @@ for t in 0..<50 {
   print(t)
 }
 
+//func prune(_ g: [String]) -> [String] {
+//  var margin = 99999
+//  let mc = g[0][0]
+//  for l in g {
+//    var i = 0
+//    while l[i] == mc { i += 1 }
+//    margin = min(i, margin)
+//    
+    
 var out = 0
 for y in 0..<grid.count {
   for x in 0..<grid[y].count {
