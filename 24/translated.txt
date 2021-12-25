@@ -1,7 +1,23 @@
-for d in digits {
-  x = z % 26 + B
+func nextZ(z, d, A, B, C) -> Int {
+  let x = z % 26 + B
+  var z = z
   z /= A (either 26 or 1)
   if d != x {
     z = z * 26 + d + C
+  }
+  return z
+}
+
+func prev(z, A, B, C) -> [(z: Int, d: Int)] {
+  out = [(z: Int, d: Int)]()
+  for d in 1...9 {
+    var z6 = (z - d - C) / 26
+    var z41 = z6 * A
+    var z42 = z * A
+    if d != z41 % 26 + B {
+      out.append((z: z41, d: d))
+    } else {
+      out.append((z: z42, d: d))
+    }
   }
 }

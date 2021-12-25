@@ -1,31 +1,14 @@
 inp w
 inp w
 inp w
-z = (digit2 + 16) * 26 + digit3 + 4
 inp w
-x = 0
-y = 0
 inp w
-x = ((digit2 + 16) * 26 + digit3 + 4) % 26 - 8
-z = ((digit2 + 16) * 26 + digit3 + 4) / 26
-eql x w
-eql x 0
-mul y 0
-add y 25
-mul y x
-add y 1
-mul z y
-mul y 0
-add y w
-add y 1
-mul y x
-add z y
+branch d4 != ((digit2 + 16) * 26 + digit3 + 4) % 26 - 8
+z = ((digit2 + 16) * 26 + digit3 + 4) / 26 * 26
+y = d5 + 1 + ((digit2 + 16) * 26 + digit3 + 4) / 26 * 26
 inp w
-mul x 0
-add x z
-mod x 26
-div z 26
-add x -10
+x = ((digit2 + 16) * 26 + digit3 + 4) / 26 * 26 % 26 - 10
+z = ((digit2 + 16) * 26 + digit3 + 4) / 26 * 26 / 26
 eql x w
 eql x 0
 mul y 0
