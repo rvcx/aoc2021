@@ -1,0 +1,7 @@
+for d in digits {
+  x = z % 26 + B
+  z /= A (either 26 or 1)
+  if d != x {
+    z = z * 26 + d + C
+  }
+}
