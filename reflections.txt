@@ -291,7 +291,55 @@ Video:
 
 - I thought I explained my thinking on Part 1 a lot better! You're welcome!
 - I have difficulty imagining anyone watching an hour of flailing over Part 2. I'm sorry!
+- I liked my (incomplete) 27-region approach! Beautiful geometric framework with lots of optimization opportunities! (re-merging cuboids...)
+  - Part of the *fun* of AoC is thinking about different problem spaces
+- There are very, very few geometric problems that aren't better considered in one dimension first.
 - Two approaches to optimization:
   - Make deep use of knowledge of the structure of the problem
   - Ignore the structure of the problem and focus on the *implementation*
+- The `RangeDict` data structure seems generally useful!
+  * AI: add to swiftaoc library?
+  - I implemented *only* those bits relevant to solving this problem. Excellent!
+- Tuples, man. So half-assed.
+- Is there a protocol equivalent for C++'s "default constructible"? No?
+  * AI: look up how to do more generic generics
+- Several places we could have used binary search instead of linear scans
+  * AI: add binary search functions for sorted sequences to swiftaoc library
+- Boundary conditions are the hardest part of many/most algorithms
+- The way to ignore a parameter in a closure is `{ _, _, _,... in constant }`
+- Debugging an off-by-one error (in the code we didn't think much about) took half an hour
+  - Weird contrast between programming contests and "engineering": making all the off-by-one errors makes for more robust engineered code
+  - Quite poor debugging strategy: should have logged inputs
 
+# Day 23
+
+- Don't tackle novel problems when you're (really) tired.
+* AI: add assignment through subscript to swiftaoc grid interface
+- Translating to a more graph-theoretic representation may be cleaner
+- Tuples, man. So half-assed.
+- Used memoization again
+- There are unsolvable state due to our "only move once" condition
+- assertions are good! (particularly for this kind of programming)
+
+# Day 24
+
+- My three videos already offer two reflections...
+- Got caught up in simulating assembly not code and not reviewing its structure
+- Comparing all 14 stanzas by hand was kinda dumb
+  - just using `cat` and `diff` would probably have been pretty quick
+- Many clever and interesting but overpowered solutions!
+  - General algebraic expressions
+  - bidirectional pruning
+    - you *can* reverse the function, but the search space does get a lot bigger
+- The *only* optimization necessary was quasi-memoizing on z values between digits
+  - interpreting the assembly instead of hand-translating would have worked
+  - but slow...and we'd need to identify digit boundaries anyway
+- In hindsight, obvious that number of zs can be bounded, because dividing by 26 brings us back to zero
+
+# Day 25
+
+- *very* slow at implementing this one
+- haste can slow you down
+- "clever" hacks are almost always worse than simple dumb hacks
+  - most of the problems avoided if I'd just copied and then modified the grid instead of building it incrementally
+* AI: add setter for integer-based string subscripting to swiftaoc library
