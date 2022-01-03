@@ -343,3 +343,94 @@ Video:
 - "clever" hacks are almost always worse than simple dumb hacks
   - most of the problems avoided if I'd just copied and then modified the grid instead of building it incrementally
 * AI: add setter for integer-based string subscripting to swiftaoc library
+
+
+# Overall
+
+Background and perspective:
+- Haven't been paid to "program" for 5+ years
+  - Hasn't been primary skill for 10+ years
+- There is a huge difference between "programming" and engineering
+  - Losing sight of underlying problem is a HUGE problem in industry
+
+"Computer science":
+- Less complex parsing this year
+  - used regex parser once (on day 2), and it wasn't necessary
+- The only algorithms and data structures required were:
+  - arrays/sequences
+  - "grids" (two- and three-dimensional arrays)
+  - dictionaries/associative arrays (not necessarily sorted)
+  - sets
+  - queues
+  - breadth-first search
+- did *not* need
+  - linked lists (?)
+  - binary search (scanning small arrays is fast!)
+    - note that numeric indexing into strings may be linear in string size...
+  - heaps
+  - (explicit) trees
+  - fibonacci heaps
+  - skip lists
+  - binary decision diagrams
+  - true shortest-path algorithms (but would have made one hard problem trivial)
+  
+Engineering:
+- Type-checking by shape...
+- Little "OOP" in main code (RangeDict, day 22)
+  - no inheritance (but toyed with it for day 18)
+- Did use generics
+  - StringProtocol
+  - RangeDict<T> (day 22)
+- excluding fibonacci heap, line counts:
+  - longest were 151 (day 18 by subclass), 150 (day 22)
+    - day 24 was 144...115 of them commented out
+  - average 69.5; median 60
+
+Swift:
+- Tuples, man.
+- Strings and StringProtocol
+- String.split(..., excludeEmptySubsequences=true)
+- I *still* forget that everything has copy semantics
+
+`swiftaoc` library:
+- Python string functions heavily used
+- reading by records was useful
+- maybe should have turned [Character] into StringProtocol instead of indexing strings by integer
+- queue was useful; should maybe take an afternoon to write a real deque?
+- grid functions often convenient (but kind of half-assed)
+- didn't invest much after start of event
+
+toolchain:
+- not using vim slowed down text editing a little
+- lack of debugger was *occasionally* a minor hindrance
+
+making videos:
+- Started with screen recording; used laptop camera and mic
+- move to OBS to add live-streaming
+  - functional, but open-source-quality UI
+- I think I got a lot more comfortable being on camera
+- Marginally better at explaining my thinking?
+- *watching* the videos hugely increased time burden
+
+"competitive" performance:
+- best finish place 110 on day 16 (part 2)
+- (only) five days in top 500
+- video nerves were a big factor in first week
+- best stretch from days 16 to 21; typical that I place better in second half
+- simply sleep-deprived and burned out the last four days
+
+overall:
+- I definitely enjoy them a lot more, and do better, the morning after.
+- 25 days straight is a lot. A one-week event might be more fun.
+- Definitely let me use "more" of the Swift language than coding against frameworks; educational
+- Several over-general, over-complex approaches; design failures
+- "Code katas"
+
+AIs for future events:
+* Use XCode next time?
+* Edit together livestream, solution walkthrough, and reflection into single video for each day
+  - Learn video editing software
+  - Practice structured explanation
+  - People seem to want succinct "I'm stuck; help me" videos
+* Figure out how to project notes from iPad into video
+* Go through all 25 inputs and come up with better library interface
